@@ -1,4 +1,4 @@
-package co.m_salah.hacker_rank.Challenges.InterviewPreparation.Arrays;
+package co.m_salah.hacker_rank.Challenges.DataStructures.Arrays;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -34,7 +34,7 @@ public class DynamicArray {
             }
         });
 
-        List<Integer> result = Result.dynamicArray(n, queries);
+        List<Integer> result = ResultDynamicArray.dynamicArray(n, queries);
         for (int value : result){
             System.out.println(value);
         }
@@ -42,7 +42,7 @@ public class DynamicArray {
     }
 }
 
-class Result {
+class ResultDynamicArray {
 
     /*
      * Complete the 'dynamicArray' function below.
@@ -58,7 +58,6 @@ class Result {
         List<List<Integer>> seqList = new ArrayList<>();
         int lastAns =0;
         ArrayList<Integer> result = new ArrayList<>();
-
         for (int i = 0; i < n; i++) {
             seqList.add(new ArrayList<>());
         }
