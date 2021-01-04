@@ -35,8 +35,9 @@ public class DynamicArray {
         });
 
         List<Integer> result = Result.dynamicArray(n, queries);
-
-
+        for (int value : result){
+            System.out.println(value);
+        }
         bufferedReader.close();
     }
 }
@@ -56,7 +57,7 @@ class Result {
         // Write your code here
         List<List<Integer>> seqList = new ArrayList<>();
         int lastAns =0;
-        List<Integer> result = new ArrayList();
+        ArrayList<Integer> result = new ArrayList<>();
 
         for (int i = 0; i < n; i++) {
             seqList.add(new ArrayList<>());
