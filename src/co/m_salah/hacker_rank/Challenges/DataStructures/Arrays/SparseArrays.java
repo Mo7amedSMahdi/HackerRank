@@ -1,8 +1,5 @@
 package co.m_salah.hacker_rank.Challenges.DataStructures.Arrays;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.Scanner;
 
 public class SparseArrays {
@@ -23,7 +20,7 @@ public class SparseArrays {
 
     private static final Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         int stringsCount = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
@@ -47,8 +44,8 @@ public class SparseArrays {
 
         int[] res = matchingStrings(strings, queries);
 
-        for (int i = 0; i < res.length; i++) {
-            System.out.println(res[i]);
+        for (int re : res) {
+            System.out.println(re);
         }
 
 
